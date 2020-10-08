@@ -1,5 +1,11 @@
-//Name: 
-//Date: 
+//Name: TD
+//Date: 10/8/2020
+
+/*
+* This program takes user inputs to create a custom triangle
+* This program also calls the functions in the Triangle.java file
+* It will output the triangle's perimeter and area
+*/
 
 import java.util.Scanner; 
 
@@ -10,21 +16,29 @@ public class Main
 	{
 		Scanner keyboard = new Scanner(System.in);
 
-		//ask for user input
+	//----- Get User Inputs -----//
+    //Get side A
 		System.out.print("Enter side A ::  ");
 		int a = keyboard.nextInt();
 
+    //Get side B
 		System.out.print("Enter side B ::  ");
 		int b = keyboard.nextInt();
 
+    //Get side C
 		System.out.print("Enter side C ::  ");
 		int c = keyboard.nextInt();
 
+  //----- Create Triangle -----//
+    //Generate triangle with user inputs
 		Triangle test = new Triangle(a,b,c);
-		System.out.println("Perimeter is: " + test.getPerimeter());
-		System.out.print("Area is: " );
 
-    //This will round the area
+    //Print out custom triangle perimeter
+		System.out.println("Perimeter is: " + test.getPerimeter());
+
+    //Print out "Area is: "
+		System.out.print("Area is: " );
+    //Print out custom area to 5 decimal places
     System.out.printf("%.5f\n",test.getArea());
 
 	}
