@@ -36,9 +36,8 @@ public class Main
     //Print out custom triangle perimeter
 		System.out.println("Perimeter is: " + test.getPerimeter());
 
-    //Print out "Area is: "
+    //Print out custom triangle area to 5 decimal places
 		System.out.print("Area is: " );
-    //Print out custom area to 5 decimal places
     System.out.printf("%.5f\n",test.getArea());
 
 	}
